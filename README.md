@@ -10,6 +10,8 @@ An Arduino Uno sits between the MIDI jack in the guitar and the original control
 
 Note that an optocoupler is used to interface between the original controller board and the Arduino. See [The MIDI electrical spec](https://www.midi.org/specifications/item/midi-din-electrical-specification) for details.
 
+The Aruino code makes use of the [Ardino MIDI Library](https://github.com/FortySevenEffects/arduino_midi_library/).
+
 ### I/O Map
 I/O Pin | Function
 --------|--------
@@ -23,6 +25,21 @@ D6 | String 5 (B3) mute
 D7 | String 6 (E4) mute
 A5 | Left (LOW)/Right (HIGH) handed play
 A4 | Single (LOW)/Multi (HIGH) channel output
+
+### MIDI Echo Traffic Sniffer
+A small application was made using node.js and the [node MIDI library](https://github.com/justinlatimer/node-midi) that prints the contents of the MIDI traffic if a USB MIDI adapter is connected between a computer and the MIDI jack on the guitar.  This was useful for development and debuging of the Arduino code.  It is in the midi-echo directory.  To use the sniffer, you will need node.js installed and a USB MIDI adapter that is supported by your operating system.  This little program was created on a Mac.  YMMV.
+
+To "install" it, open a terminal in the midi-echo directory and type:
+```
+npm install
+```
+
+To use it, open a terminal in the midi-echo directory and type:
+```
+node index.js
+```
+
+To exit the application, type `<CTRL>C`.
 
 ### Notes
 
