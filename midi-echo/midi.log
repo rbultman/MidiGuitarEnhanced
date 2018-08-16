@@ -1,0 +1,12 @@
+Script started on Thu Aug 16 08:13:10 2018
+[?1034hbash-3.2$ ls
+index.js		midi.log		node_modules		package-lock.json	package.json
+bash-3.2$ node index.js 
+Found this many ports: 1
+Names: 
+Port 0 name: USB Uno MIDI Interface
+^C
+bash-3.2$ exit
+exit
+
+Script done on Thu Aug 16 09:07:27 2018
