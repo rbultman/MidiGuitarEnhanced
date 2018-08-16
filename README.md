@@ -17,12 +17,12 @@ I/O Pin | Function
 --------|--------
 D0 | TX from the original controller
 D1 | TX to the MIDI jack
-D2 | String 1 (E2) mute
-D3 | String 2 (A2) mute
-D4 | String 3 (D3) mute
-D5 | String 4 (G3) mute
-D6 | String 5 (B3) mute
-D7 | String 6 (E4) mute
+D2 | String 1 (E4) mute
+D3 | String 2 (B3) mute
+D4 | String 3 (G3) mute
+D5 | String 4 (D3) mute
+D6 | String 5 (A2) mute
+D7 | String 6 (E2) mute
 A5 | Left (LOW)/Right (HIGH) handed play
 A4 | Single (LOW)/Multi (HIGH) channel output
 
