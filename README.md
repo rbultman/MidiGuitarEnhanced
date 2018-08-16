@@ -3,7 +3,7 @@ An enhancement to the RockBand3 Mustang Pro guitar
 
 This hack was originally done by [gillspice](http://github.com/gillspice).  He took a Rockband 3 Mustang Pro guitar and hacked it to play left handed.  He also added cap touch to the strings so that notes can be muted by touching the strings.
 
-This hack recreates the original hack, plus adds a switch to select left/right-handed play on the fly, as well as a second switch to force all of the notes to be played through a single MIDI channel (instead of 6 channels) for use with devices which expect all MIDI data to be on a single channel.
+This hack recreates the original hack, plus adds a switch to select left/right-handed play on the fly, as well as a second switch to force all of the notes to be played through a single MIDI channel (instead of 6 channels, one string per channel) for use with devices which expect all MIDI data to be on a single channel.
 
 ### How it works
 An Arduino Uno sits between the MIDI jack in the guitar and the original controller board.  The Arduino either passes through MIDI notes for right-handed play or remaps the notes to the mirror-image channel and note for left-handed play.  For single-channel mode, all notes are simply sent on channel 1.
